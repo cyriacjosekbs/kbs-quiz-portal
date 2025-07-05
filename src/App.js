@@ -1,26 +1,25 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 // Main App component for the quiz portal
 const App = () => {
   // State to manage the current quiz link and other dynamic content
   // In a real application, you might fetch these from a database or a simple configuration file.
-  const [currentQuizLink, setCurrentQuizLink] = useState('https://forms.gle/your-quiz-link-here'); // Placeholder for your Google Form link
-  const [leaderboardLink, setLeaderboardLink] = useState('https://docs.google.com/spreadsheets/d/your-leaderboard-link-here/edit'); // Placeholder for your Google Sheet leaderboard
-  const [quizSchedule, setQuizSchedule] = useState([
-    { week: 1, topic: 'Marketing Fundamentals', date: 'July 8, 2025' },
-    { week: 2, topic: 'Brand Management', date: 'July 15, 2025' },
-    { week: 3, topic: 'Digital Marketing', date: 'July 22, 2025' },
-    { week: 4, topic: 'Consumer Behavior', date: 'July 29, 2025' },
-    // Add more weeks as needed
-  ]);
-  const [rules, setRules] = useState([
-    'Each quiz will be timed. Ensure you have a stable internet connection.',
-    'All questions must be answered individually. Any form of cheating will lead to disqualification from the league.',
-    'The quiz will be accessible for a limited time window each week.',
-    'Your final score will contribute to your overall league ranking.',
-    'Decisions of the Marketing Club Chairperson are final.',
-  ]);
-
+  const currentQuizLink = 'https://forms.gle/your-quiz-link-here';
+const leaderboardLink = 'https://docs.google.com/spreadsheets/d/your-leaderboard-link-here/edit';
+const quizSchedule = [
+  { week: 1, topic: 'Marketing Fundamentals', date: 'July 8, 2025' },
+  { week: 2, topic: 'Brand Management', date: 'July 15, 2025' },
+  { week: 3, topic: 'Digital Marketing', date: 'July 22, 2025' },
+  { week: 4, topic: 'Consumer Behavior', date: 'July 29, 2025' },
+];
+// ... (other code)
+const rules = [
+  'Each quiz will be timed. Ensure you have a stable internet connection.',
+  'All questions must be answered individually. Any form of cheating will lead to disqualification from the league.',
+  'The quiz will be accessible for a limited time window each week.',
+  'Your final score will contribute to your overall league ranking.',
+  'Decisions of the Marketing Club Chairperson are final.',
+];
   // Placeholder for Firebase setup if you decide to add dynamic content later
   // const [db, setDb] = useState(null);
   // const [auth, setAuth] = useState(null);
